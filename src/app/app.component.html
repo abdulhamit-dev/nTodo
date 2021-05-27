@@ -1,0 +1,35 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+  <ion-tabs>
+    <ion-tab-bar>
+      <ion-button  color="warning" routerLink="notes" >
+        <ion-icon name="clipboard-outline"></ion-icon>
+        <ion-label>Not</ion-label>
+      </ion-button>
+      <ion-button color="success" routerLink="reminders">
+        <ion-icon name="alarm-outline"></ion-icon>
+        <ion-label>Hatırlatma</ion-label>
+      </ion-button>
+      <ion-button color="danger" (click)="authService.SignOut()" >
+        <ion-label>X</ion-label>
+      </ion-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-app>
+<!-- <ion-header>
+  <ion-toolbar  >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button color="danger"></ion-back-button>
+    </ion-buttons>
+    <ion-segment value="not" >
+
+      <ion-segment-button value="not" routerLink="notes">
+        Not
+      </ion-segment-button>
+      <ion-segment-button value="hatirlaticilar" routerLink="tabs">
+        Hatırlatıcı
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header> -->

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Notlar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-input placeholder="Not yaz!" [autofocus]="true" [(ngModel)]="notAd" (keyup.enter)="kaydet($event)"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-list>
+          <ion-item *ngFor="let kul of allNotes">
+            <ion-label>
+              <h2>{{kul.payload.doc.data().note}}</h2>
+            </ion-label>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

@@ -1,0 +1,7 @@
+{
+  "name": "ntodo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
